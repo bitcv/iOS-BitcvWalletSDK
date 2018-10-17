@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -51,8 +52,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nz8-2Z-o83">
+                                <rect key="frame" x="10" y="94" width="355" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QuD-xw-AiT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="383-Rr-fo1">
-                                <rect key="frame" x="0.0" y="94" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="134" width="375" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="qZH-jQ-enE"/>
                                 </constraints>
@@ -62,7 +72,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-3Q-34u">
-                                <rect key="frame" x="0.0" y="154" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="194" width="375" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="WYG-Uu-0K2"/>
                                 </constraints>
@@ -72,7 +82,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kg-0X-GMN">
-                                <rect key="frame" x="0.0" y="214" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="254" width="375" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="jke-Tu-ghL"/>
                                 </constraints>
@@ -82,7 +92,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9l-Is-AKM">
-                                <rect key="frame" x="0.0" y="274" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="314" width="375" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0g8-qU-nvc"/>
                                 </constraints>
@@ -98,11 +108,14 @@
                             <constraint firstItem="rp1-3Q-34u" firstAttribute="top" secondItem="383-Rr-fo1" secondAttribute="bottom" id="NIY-X4-6UD"/>
                             <constraint firstItem="383-Rr-fo1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qu4-ZA-Uzb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="383-Rr-fo1" secondAttribute="trailing" id="U0O-z2-OQw"/>
+                            <constraint firstItem="nz8-2Z-o83" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ZeY-kw-mdw"/>
                             <constraint firstItem="6kg-0X-GMN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b3h-HM-oTl"/>
                             <constraint firstItem="d9l-Is-AKM" firstAttribute="top" secondItem="6kg-0X-GMN" secondAttribute="bottom" id="bRe-EB-Ebt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="383-Rr-fo1" secondAttribute="top" constant="-30" id="mAn-z2-295"/>
                             <constraint firstItem="6kg-0X-GMN" firstAttribute="top" secondItem="rp1-3Q-34u" secondAttribute="bottom" id="oFV-i0-txZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nz8-2Z-o83" secondAttribute="trailing" constant="10" id="vUE-Lt-dOB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6kg-0X-GMN" secondAttribute="trailing" id="vrY-o5-aAt"/>
+                            <constraint firstItem="nz8-2Z-o83" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="vs4-KX-cCT"/>
+                            <constraint firstItem="383-Rr-fo1" firstAttribute="top" secondItem="nz8-2Z-o83" secondAttribute="bottom" id="yNe-l5-z2E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rp1-3Q-34u" secondAttribute="trailing" id="zQR-eE-USh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d9l-Is-AKM" secondAttribute="trailing" id="ztl-ch-Gaf"/>
                         </constraints>
@@ -110,6 +123,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="BitcvWalletDemo" id="eT7-6L-dpM"/>
                     <connections>
+                        <outlet property="mobileTextField" destination="nz8-2Z-o83" id="mah-py-QcP"/>
                         <outlet property="versionLabel" destination="d9l-Is-AKM" id="cby-yv-yHK"/>
                     </connections>
                 </viewController>
