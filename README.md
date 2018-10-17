@@ -1,2 +1,2 @@
 # iOS-BitcvWalletSDK
-BitcvWalletSDK
+BitcvWalletSDK，语言Objective-C
