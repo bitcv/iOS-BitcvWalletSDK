@@ -23,7 +23,7 @@
 - (IBAction)presentBtnClick:(id)sender {
     
     [BitcvWalletManager initWithAppKey:@"bcv2SnqmaJ4Y4xk2"];
-    [BitcvWalletManager presentViewControllerWithViewController:self nation:@"+86" mobile:@"15116903332" exitBlock:^{
+    [BitcvWalletManager presentViewControllerWithViewController:self nation:nil mobile:@"xxxxxxxxxxx" exitBlock:^{
         
     }];
 }
@@ -31,7 +31,7 @@
 - (IBAction)pushBtnClick:(id)sender {
     
     [BitcvWalletManager initWithAppKey:@"bcv2SnqmaJ4Y4xk2"];
-    [BitcvWalletManager pushViewControllerWithNavigationController:self.navigationController nation:nil mobile:@"15116903332" exitBlock:^{
+    [BitcvWalletManager pushViewControllerWithNavigationController:self.navigationController nation:nil mobile:@"xxxxxxxxxxx" exitBlock:^{
         
     }];
 }
